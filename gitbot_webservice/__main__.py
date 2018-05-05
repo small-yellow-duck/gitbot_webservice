@@ -51,7 +51,5 @@ if __name__ == "__main__":
 
     web.run_app(app, port=port)
 
-
-
     # return a "Success"
-    return web.Response(status=200)
+    
