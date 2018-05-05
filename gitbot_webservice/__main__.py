@@ -40,6 +40,7 @@ async def main(request):
 
         # call the appropriate callback for the event
         await router.dispatch(event, gh)
+    return web.Response(status=200)
 
 if __name__ == "__main__":
     app = web.Application()
