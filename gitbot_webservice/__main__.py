@@ -8,7 +8,7 @@ from gidgethub import aiohttp as gh_aiohttp
 
 
 
-routing = routing.Router()
+router = routing.Router()
 
 @router.register("issues", action="opened")
 async def issue_opened_event(event, gh, *args, **kwargs):
@@ -52,4 +52,3 @@ if __name__ == "__main__":
     web.run_app(app, port=port)
 
     # return a "Success"
-    
